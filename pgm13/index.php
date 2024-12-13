@@ -6,15 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <center>
-        <form action="index.php" method="post">
-            <label for="">Enter the units</label>
-            <input type="text" id="units" name="units" required><br><br>
-            <label for="">Total Amount is : </label>
-            <input type="text" id="amount" name="amount" readonly><br><br>
-            <button>Submit</button>
-        </form>
-    </center>
+    <div>
+        <center>
+            <form action="index.php" method="post">
+                <label>Enter the units</label>
+                <input type="text" id="units" name="units" required><br><br>
+                <label>Total Amount is : </label>
+                <input type="text" id="amount" name="amount" readonly><br><br>
+                <button>Submit</button>
+            </form>
+        </center>
+    </div>
     <?php
     if (isset($_POST["units"])){
         $units = $_POST["units"];
