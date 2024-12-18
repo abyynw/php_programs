@@ -44,7 +44,7 @@ include("database.php");
                         <td><input type="text" id="publisher" name="publisher"></td>
                     </tr>
                     <tr>
-                        <td><input type="submit" name="submit" value="INSERT"></td>
+                        <th colspan="2"><input type="submit" name="submit" value="INSERT"></th>
                     </tr>
                 </table>
             </form>
