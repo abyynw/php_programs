@@ -44,7 +44,7 @@ if(isset($_POST['bookid'])){
     
     $sql = "DELETE FROM `library` WHERE bookid = '$bookid'";
     $result = mysqli_query($conn,$sql);
-    if($result){
+    if($result && mysqli_affected_rows($conn) > 0){
         echo "<script>alert('Successfully DELETED ...')</script>";
     }
     else{
